@@ -5,8 +5,8 @@
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(12,11,5,4,3,2);
 
-String teks1 = "billalblogs.me";
-String teks2 = "Billal Fauzan";
+String teks1 = "    Billal Fauzan";
+String teks2 = "Arduino running text";
 
 void setup() 
 {
@@ -21,7 +21,7 @@ void loop()
   for (i = 0 ; i < 16; i++)
   {
     lcd.scrollDisplayLeft(); 
-    delay(250);
+    delay(600);
   }
   
   int a;  
@@ -29,7 +29,7 @@ void loop()
   lcd.print(teks2);
   for (a = 0 ; a < 16; a++)
   {
-    lcd.scrollDisplayLeft(); 
-    delay(250);
+    lcd.scrollDisplayRight(); 
+    delay(600);
   } 
 }
